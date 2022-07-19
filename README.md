@@ -34,11 +34,13 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+[coding-boot-camp](https://github.com/coding-boot-camp/fantastic-umbrella)
 
-If you followed tutorials, include links to those here as well.
+[Alex Van Dyke](https://github.com/AlexandertheGreat491)
+
+Tutorials:
 
 ## License
 
