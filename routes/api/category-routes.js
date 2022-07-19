@@ -14,6 +14,7 @@ router.get("/", (req, res) => {
   .then(dbCatData => {
     if(!dbCatData) {
       res.status(404).json({message: 'No categories were found!'})
+      return;
     }
     res.json(dbCatData);
   })
@@ -35,6 +36,17 @@ router.get("/:id", (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
+  .then(dbCatData => {
+    if(!dbCatData) {
+      res.status(404).json({message: 'No categories were found!'});
+      return;
+    }
+    res.json(dbCatData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err)
+  });
 });
 
 // creates a new category
