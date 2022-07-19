@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "git+https://github.com/AlexandertheGreat491/E-Commerce-Back-End.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Alex Van Dyke",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
