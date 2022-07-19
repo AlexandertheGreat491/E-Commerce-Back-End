@@ -68,6 +68,17 @@ router.put("/:id", (req, res) => {
       id: req.params.id
     }
   })
+  .then(dbCatData => {
+    if (!dbCatData) {
+      res.status(404).json({message: 'No category found with this id!'});
+      return;
+    }
+    res.json(dbCatData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  })
 });
 
 // deletes a category by its `id` value
