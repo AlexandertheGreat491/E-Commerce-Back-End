@@ -42,9 +42,22 @@ Collaborators:
 
 Tutorials:
 
+[Dotenv](https://www.npmjs.com/package/dotenv)
+
+[MySQL Reference Guide](https://coding-boot-camp.github.io/full-stack/mysql/mysql-reference-guide)
+
+[Nodemon](https://www.npmjs.com/package/nodemon)
+
+[Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+
+[Sequelize](https://sequelize.org/v5/manual/getting-started.html)
+
+[Sequelize](https://www.npmjs.com/package/sequelize)
+
+[Working with Config Vars on Heroku](https://www.youtube.com/watch?v=g81LARb914Y&t=13s)
+
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
+[Link to license](./LICENSE)
 
 
