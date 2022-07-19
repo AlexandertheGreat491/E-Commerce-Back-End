@@ -26,7 +26,15 @@ router.get("/", (req, res) => {
 // finds one category by its `id` value
 // includes its associated Products
 router.get("/:id", (req, res) => {
-  
+  Category.findAll({
+    where: {
+      id: req.params.id
+    },
+    include: {
+      model: Product,
+      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+    }
+  })
 });
 
 // creates a new category
