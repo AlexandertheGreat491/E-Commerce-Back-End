@@ -5,7 +5,9 @@ const { Tag, Product, ProductTag } = require('../../models');
 // finds all tags
 //  includes its associated Product data
 router.get('/', (req, res) => {
-  
+  Tag.findAll({
+    
+  })
 });
 
 // finds a single tag by its `id`
