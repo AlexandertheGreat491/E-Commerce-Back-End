@@ -39,7 +39,9 @@ router.get('/:id', (req, res) => {
 
 // creates a new tag
 router.post('/', (req, res) => {
-  
+  Tag.create({
+    tag_name: req.body.tag_name
+  })
 });
 
 // updates a tag's name by its `id` value
