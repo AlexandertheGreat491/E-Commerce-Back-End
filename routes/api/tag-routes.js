@@ -51,7 +51,11 @@ router.post('/', (req, res) => {
 
 // updates a tag's name by its `id` value
 router.put('/:id', (req, res) => {
-  
+  Tag.update(req.body, {
+    where: {
+      id: req.params.id
+    }
+  })
 });
 
 // deletes a tag by its `id` value
