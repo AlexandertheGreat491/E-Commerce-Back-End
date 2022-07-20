@@ -21,7 +21,9 @@ router.get('/', (req, res) => {
 // finds a single tag by its `id`
 //  includes its associated Product data
 router.get('/:id', (req, res) => {
-  
+  Tag.findOne({
+    
+  })
 });
 
 // creates a new tag
