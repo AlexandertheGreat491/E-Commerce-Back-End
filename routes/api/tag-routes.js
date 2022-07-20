@@ -22,7 +22,13 @@ router.get('/', (req, res) => {
 //  includes its associated Product data
 router.get('/:id', (req, res) => {
   Tag.findOne({
-    
+    where: {
+      id: req.params.id
+    },
+    include: {
+      model: Product,
+      attributes: ['product_name', 'price', 'stock', 'category_id']
+    }
   })
 });
 
