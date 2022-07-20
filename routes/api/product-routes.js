@@ -4,10 +4,10 @@ const { Product, Category, Tag, ProductTag } = require("../../models");
 // The `/api/products` endpoint
 
 // get all products
-// included its associated Category and Tag data
 router.get("/", (req, res) => {
   Product.findAll({
     attributes: ["id", "product_name", "price", "stock"],
+    // includes its associated Category and Tag data
     include: [
       {
         model: Category,
@@ -27,9 +27,35 @@ router.get("/", (req, res) => {
 });
 
 // gets a single product by its `id`
-// includes its associated Category and Tag data
 router.get("/:id", (req, res) => {
-
+  Product.findOne({
+    where: {
+      id: req.params.id,
+    },
+    attributes: ["id", "product_name", "price", "stock"],
+    // includes its associated Category and Tag data
+    include: [
+      {
+        model: Category,
+        attributes: ["category_name"],
+      },
+      {
+        model: Tag,
+        attributes: ["tag_name"],
+      },
+    ],
+  })
+    .then((dbProductData) => {
+      if (!dbProductData) {
+        res.status(404).json({ message: "No product found with this id!" });
+        return;
+      }
+      res.json(dbProductData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // create new product
