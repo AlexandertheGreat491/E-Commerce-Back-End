@@ -30,6 +30,11 @@ router.get('/:id', (req, res) => {
       attributes: ['product_name', 'price', 'stock', 'category_id']
     }
   })
+  .then(dbTagData => res.json(dbTagData))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  })
 });
 
 // creates a new tag
