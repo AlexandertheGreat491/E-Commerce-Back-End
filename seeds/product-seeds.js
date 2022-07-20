@@ -36,3 +36,5 @@ const productData = [
 const seedProducts = () => Product.bulkCreate(productData);
 
 module.exports = seedProducts;
+
+//product table seeded successfully
