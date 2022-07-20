@@ -26,10 +26,11 @@ router.get("/", (req, res) => {
     });
 });
 
-// get one product
-// find a single product by its `id`
-// be sure to include its associated Category and Tag data
-router.get("/:id", (req, res) => {});
+// gets a single product by its `id`
+// includes its associated Category and Tag data
+router.get("/:id", (req, res) => {
+
+});
 
 // create new product
 router.post("/", (req, res) => {
