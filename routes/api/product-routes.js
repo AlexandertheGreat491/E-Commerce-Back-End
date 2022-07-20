@@ -58,7 +58,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-// create new product
+// creates a new product
 router.post("/", (req, res) => {
   /* req.body should look like this...
     {
@@ -70,7 +70,7 @@ router.post("/", (req, res) => {
   */
   Product.create(req.body)
     .then((product) => {
-      // if there's product tags, we need to create pairings to bulk create in the ProductTag model
+      // if there are product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
@@ -80,7 +80,7 @@ router.post("/", (req, res) => {
         });
         return ProductTag.bulkCreate(productTagIdArr);
       }
-      // if no product tags, just respond
+      // if there are no product tags, just respond
       res.status(200).json(product);
     })
     .then((productTagIds) => res.status(200).json(productTagIds))
@@ -90,16 +90,16 @@ router.post("/", (req, res) => {
     });
 });
 
-// update product
+// updates the product
 router.put("/:id", (req, res) => {
-  // update product data
+  // updates product data
   Product.update(req.body, {
     where: {
       id: req.params.id,
     },
   })
     .then((product) => {
-      // find all associated tags from ProductTag
+      // finds all of the associated tags from ProductTag
       return ProductTag.findAll({ where: { product_id: req.params.id } });
     })
     .then((productTags) => {
@@ -114,7 +114,7 @@ router.put("/:id", (req, res) => {
             tag_id,
           };
         });
-      // figure out which ones to remove
+      // figures out which ones to remove
       const productTagsToRemove = productTags
         .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
         .map(({ id }) => id);
@@ -132,8 +132,20 @@ router.put("/:id", (req, res) => {
     });
 });
 
+// deletes one product by its `id` value
 router.delete("/:id", (req, res) => {
-  // delete one product by its `id` value
+  let deleteProduct = Product.findByPk(req.params.id);
+  Product.destroy({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((product) => {
+      res.json(`${deleteProduct} was removed from the database!`);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 module.exports = router;
