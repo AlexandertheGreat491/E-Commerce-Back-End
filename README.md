@@ -12,12 +12,7 @@ Please use this table of contents to navigate the README.
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The goal of this project was to create the back end of an e-commerce application that would allow a manager at an internet retail company to utilize the latest technologies to enable the company to compete with other e-commerce companies. Additionally, the goal was to create an e-commerce platform that would utilize MySQl, Sequelize, and JavaScript to create models and routes where the user can run GET, POST, DELETE, and PUT requests to leverage and manipulate data in the database.
 
 ## Installation
 
