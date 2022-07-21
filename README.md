@@ -24,6 +24,8 @@ Please use the following steps to install this application on your local compute
 
 -Step 3: In GitBash run the command git clone https://github.com/AlexandertheGreat491/E-Commerce-Back-End.git
 
+If you ware using a license other than MIT you will need to change the license name in the package.json file.
+
 -Step 4: Make sure that Insomnia is installed on your local device. If Insomnia is not installed on your local computer, navigate to the [Insomnia Docs](https://docs.insomnia.rest/) for installation instructions.
 
 -Step 5: Open the folder that you saved the cloned repository in in your code editor and open the .env file. Leave the value for DB_NAME as it is. Make sure to change DB_USER to your MySQL username and change DB_PW to your MySQL password.
