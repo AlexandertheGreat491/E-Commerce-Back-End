@@ -51,7 +51,7 @@ After following these steps the application has been installed on you local comp
 
 Please watch the walkthrough video get an idea of how the application should be used on your local computer after following the installation instructions:
 
-------link to walkthrough video will go here-------
+[E-Commerce Back End Walkthrough Video](https://vimeo.com/732172741)
 
 
 ## Credits
