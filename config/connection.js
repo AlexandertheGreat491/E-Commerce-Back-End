@@ -1,3 +1,4 @@
+//ensures connection between the server and the database
 const Sequelize = require("sequelize");
 
 require("dotenv").config();
