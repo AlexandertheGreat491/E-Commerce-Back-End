@@ -60,8 +60,6 @@ Please watch the walkthrough video get an idea of how the application should be 
 
 Collaborators:
 
-[coding-boot-camp](https://github.com/coding-boot-camp/fantastic-umbrella)
-
 [Alex Van Dyke](https://github.com/AlexandertheGreat491)
 
 Tutorials:
