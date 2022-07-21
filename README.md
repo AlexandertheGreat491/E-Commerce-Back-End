@@ -49,6 +49,9 @@ After following these steps the application has been installed on you local comp
 
 ## Usage
 
+Please watch the walkthrough video get an idea of how the application should be used on your local computer after following the installation instructions:
+
+------link to walkthrough video will go here-------
 
 
 ## Credits
