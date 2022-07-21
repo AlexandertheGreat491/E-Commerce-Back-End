@@ -16,7 +16,11 @@ The goal of this project was to create the back end of an e-commerce application
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Please use the following steps to install this application on your local computer:
+
+-Step 1: Access the [Public GitHub Repository](https://github.com/AlexandertheGreat491/E-Commerce-Back-End.git)
+
+
 
 ## Usage
 
