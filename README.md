@@ -4,6 +4,7 @@
 
 Please use this table of contents to navigate the README.
 
+- [Descriptions](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
