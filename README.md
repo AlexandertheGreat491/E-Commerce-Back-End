@@ -66,6 +66,8 @@ Tutorials:
 
 [Dotenv](https://www.npmjs.com/package/dotenv)
 
+[Insomnia Docs](https://docs.insomnia.rest/)
+
 [MySQL Reference Guide](https://coding-boot-camp.github.io/full-stack/mysql/mysql-reference-guide)
 
 [Nodemon](https://www.npmjs.com/package/nodemon)
